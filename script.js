@@ -158,3 +158,23 @@ function num2to1T() {
 
     numero1.value = resultado;
 }
+
+
+// funcionalidad presion
+function num1to2P() {
+    // pascal a bar
+    numero1 = document.getElementById("numero1P").value;
+    numero2 = document.getElementById("numero2P");
+    resultado = numero1 / 100000;
+    
+    numero2.value = resultado;
+}
+
+function num2to1P() {
+    // bar a pascal
+    numero1 = document.getElementById("numero1P");
+    numero2 = document.getElementById("numero2P").value;
+    resultado = numero2 * 100000;
+    
+    numero1.value = resultado;
+}

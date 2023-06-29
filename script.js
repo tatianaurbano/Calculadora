@@ -178,3 +178,23 @@ function num2to1P() {
     
     numero1.value = resultado;
 }
+
+
+//funcionalidad masa
+function num1to2M() {
+    // kilogramo a gramo
+    numero1 = document.getElementById("numero1M").value;
+    numero2 = document.getElementById("numero2M");
+    resultado = numero1 * 1000;
+
+    numero2.value = resultado;
+}
+
+function num2to1M() {
+    // gramo a kilogramo
+    numero1 = document.getElementById("numero1M");
+    numero2 = document.getElementById("numero2M").value;
+    resultado = numero2 / 1000;
+
+    numero1.value = resultado;
+}

@@ -198,3 +198,23 @@ function num2to1M() {
 
     numero1.value = resultado;
 }
+
+
+//funcionalidad longitud
+function num1to2L() {
+    // metro a centimetro
+    numero1 = document.getElementById("numero1L").value;
+    numero2 = document.getElementById("numero2L");
+    resultado = numero1 * 100;
+
+    numero2.value = resultado;
+}
+
+function num2to1L() {
+    // centimetro a metro
+    numero1 = document.getElementById("numero1L");
+    numero2 = document.getElementById("numero2L").value;
+    resultado = numero2 / 100;
+
+    numero1.value = resultado;
+}

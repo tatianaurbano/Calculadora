@@ -98,6 +98,35 @@
                 </div>
 
             </div>
+            <div class="col-12 col-md-8 col-lg-6 col-xl-4">
+                <div class="calc-keys">
+                    <input class="col" type="button" value="Unidades" onclick="ocultarFunc()">
+                </div>
+                <div class="d-none" id="unidades" >
+                    <!-- Temperatura -->
+                    <div class="row">
+                        <div class="col-12 m-3">
+                            <select id="operacion" class="col-12 p-3">
+                                <option value="T" selected>Temperatura</option>
+                            </select>
+
+                        </div>
+                        <div class="col-12 d-flex justify-content-center ">
+                            <div class="col-5">
+                                <input type="number" id="numero1" class="col-12 text-center" onkeyup="num1to2T()">
+
+                                <label style="color: aliceblue;">Celcius</label>
+                            </div>
+                            <h1>=</h1>
+                            <div class="col-5">
+                                <input type="number" id="numero2" class="col-12 text-center" onkeyup="num2to1T()">
+
+                                <label style="color: aliceblue;">Fahrenheit</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 

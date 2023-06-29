@@ -134,3 +134,27 @@ function myFunction_set(val) {
 }
 
 
+function ocultarFunc(){
+    unidades = document.getElementById("unidades");
+    unidades.classList.toggle("d-none");
+}
+
+
+// funcionalidad temperatura
+function num1to2T() {
+    // celsius a fahrenheit
+    numero1 = document.getElementById("numero1").value;
+    numero2 = document.getElementById("numero2");
+    resultado = (numero1 * 9 / 5) + 32;
+
+    numero2.value = resultado;
+}
+
+function num2to1T() {
+    // fahrenheit a celsius
+    numero1 = document.getElementById("numero1");
+    numero2 = document.getElementById("numero2").value;
+    resultado = (numero2 - 32) * 5 / 9;
+
+    numero1.value = resultado;
+}
